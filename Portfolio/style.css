@@ -638,3 +638,31 @@ span{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+/* === DARK MODE STYLES === */
+body.dark-mode {
+  background-color: #121212;
+  color: #e40f0f;
+}
+
+body.dark-mode header,
+body.dark-mode section,
+body.dark-mode .navbar,
+body.dark-mode .home-content,
+body.dark-mode .about,
+body.dark-mode .education,
+body.dark-mode .skills,
+body.dark-mode .portfolio,
+body.dark-mode .contact,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+/* Adjust link hover color if needed */
+body.dark-mode a {
+  color: #ffffff;
+}
+
+body.dark-mode a:hover {
+  color: #00d9ff;
+}
