@@ -220,24 +220,37 @@
     if (!elements.contactForm) return;
     
     elements.contactForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
-      const submitBtn = elements.contactForm.querySelector('.submit-btn');
-      const originalText = submitBtn.innerHTML;
-      
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="bx bx-loader-alt bx-spin"></i> Sending...';
-      
-      // Simulate sending (replace with actual fetch)
-      await new Promise(r => setTimeout(r, 1500));
-      
-      showToast('Message sent successfully!');
-      elements.contactForm.reset();
-      
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalText;
+        e.preventDefault();
+        
+        const submitBtn = elements.contactForm.querySelector('.submit-btn');
+        const originalText = submitBtn.innerHTML;
+        
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="bx bx-loader-alt bx-spin"></i> Sending...';
+        
+        try {
+            const response = await fetch(elements.contactForm.action, {
+                method: 'POST',
+                body: new FormData(elements.contactForm),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                showToast('Message sent successfully! I\'ll get back to you soon.');
+                elements.contactForm.reset();
+            } else {
+                throw new Error('Failed to send');
+            }
+        } catch (error) {
+            showToast('Oops! Something went wrong. Please try again.');
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+        }
     });
-  };
+};
 
   // Toast notification
   const showToast = (message) => {
