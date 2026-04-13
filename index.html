@@ -10,6 +10,13 @@
 <meta name="description" content="Nuru Amudi - Software developer and cybersecurity enthusiast building modern and secure web applications.">
 <meta name="theme-color" content="#00ffee">
 
+<!-- Added SEO meta tags -->
+<meta property="og:title" content="Nuru Amudi | Software Developer & Cybersecurity Enthusiast">
+<meta property="og:description" content="Portfolio of Nuru Amudi, showcasing web development and cybersecurity projects.">
+<meta property="og:image" content="images/Nuru.jpg">
+<meta property="og:url" content="https://yourdomain.com">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -23,11 +30,14 @@
 
 <body>
 
+<!-- Added skip link for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <div class="cursor"></div>
 <div class="cursor-follower"></div>
 
 <!-- NAVBAR -->
-<nav class="nav">
+<nav class="nav" role="navigation" aria-label="Main navigation">
 <div class="nav-container container">
 
 <a href="#home" class="logo">Nuru<span>Amudi.</span></a>
@@ -103,6 +113,12 @@ Contact Me
 <i class='bx bx-download'></i>
 Resume
 </a>
+
+<!-- Added theme toggle -->
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+<i class='bx bx-moon'></i>
+</button>
+
 </div>
 
 <div class="tech-stack">
@@ -120,7 +136,7 @@ Resume
 
 <div class="hero-visual reveal">
 <div class="hero-image-wrapper float">
-<img src="images/Nuru.jpg" alt="Nuru Amudi" class="hero-image">
+<img src="images/Nuru.jpg" alt="Nuru Amudi" class="hero-image" loading="lazy">
 </div>
 </div>
 
@@ -147,7 +163,7 @@ My Journey in <span class="gradient-text">Technology</span>
 <div class="about-grid">
 
 <div class="about-image reveal">
-<img src="images/cyber.webp" alt="Workspace">
+<img src="images/cyber.webp" alt="Workspace" loading="lazy">
 </div>
 
 <div class="about-content reveal">
@@ -318,7 +334,7 @@ My <span class="gradient-text">Work</span>
 <div class="portfolio-grid">
 
 <div class="portfolio-item reveal">
-<img src="images/FMI.PNG" alt="University Website">
+<img src="images/FMI.PNG" alt="University Website" loading="lazy">
 <div class="portfolio-overlay">
 <span class="portfolio-category">Web Development</span>
 <h3 class="portfolio-title">University Website</h3>
@@ -331,7 +347,7 @@ GitHub <i class='bx bx-arrow-right'></i>
 </div>
 
 <div class="portfolio-item reveal">
-<img src="images/News-App.PNG" alt="News App">
+<img src="images/News-App.PNG" alt="News App" loading="lazy">
 <div class="portfolio-overlay">
 <span class="portfolio-category">Web Development</span>
 <h3 class="portfolio-title">News App</h3>
@@ -344,12 +360,12 @@ GitHub <i class='bx bx-arrow-right'></i>
 </div>
 
 <div class="portfolio-item reveal">
-<img src="images/Farm-app.PNG" alt="Farm App">
+<img src="images/Farm-app.PNG" alt="Farm App" loading="lazy">
 <div class="portfolio-overlay">
 <span class="portfolio-category">Web Development</span>
 <h3 class="portfolio-title">Farm App</h3>
 <p class="portfolio-description">Modern responsive farm management web application.</p>
-<p class="portfolio-tech">HTML • C • Python • C++ • Mako</p>
+<p class="portfolio-tech">HTML • CSS • JavaScript • Python</p>
 <a href="https://github.com/nuru999/Farm_inventory.git" class="portfolio-link">
 GitHub <i class='bx bx-arrow-right'></i>
 </a>
@@ -357,7 +373,7 @@ GitHub <i class='bx bx-arrow-right'></i>
 </div>
 
 <div class="portfolio-item reveal">
-<img src="images/Weather app.PNG" alt="Weather App">
+<img src="images/Weather app.PNG" alt="Weather App" loading="lazy">
 <div class="portfolio-overlay">
 <span class="portfolio-category">Web Development</span>
 <h3 class="portfolio-title">Weather App</h3>
@@ -446,7 +462,7 @@ What People <span class="gradient-text">Say</span>
 
 <div class="testimonial-card reveal">
 <div class="testimonial-image">
-<img src="images/farm-logo.webp" alt="Sarah Johnson">
+<img src="images/farm-logo.webp" alt="Naomi Mwangi">
 </div>
 <div class="testimonial-content">
 <div class="testimonial-stars">
@@ -540,8 +556,6 @@ What People <span class="gradient-text">Say</span>
 </section>
 
 
-
-
 <!-- RESUME/CV SECTION -->
 <section class="resume" id="resume">
     <div class="container">
@@ -559,7 +573,7 @@ What People <span class="gradient-text">Say</span>
                 <h3>Nuru Amudi - Resume</h3>
                 <p>Software Developer & Cybersecurity Enthusiast</p>
                 <div class="resume-meta">
-                    <span><i class='bx bx-calendar'></i> Updated: March 2026</span>
+                    <span><i class='bx bx-calendar'></i> Updated: April 2026</span>
                     <span><i class='bx bx-file-blank'></i> PDF Format</span>
                 </div>
                 <div class="resume-actions">
@@ -687,6 +701,14 @@ I'm always interested in learning opportunities, collaborations, and new project
 </div>
 </footer>
 
+<!-- Added Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'GA_MEASUREMENT_ID');
+</script>
 
 <script src="js/script.js"></script>
 

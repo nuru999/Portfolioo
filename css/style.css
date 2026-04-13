@@ -38,6 +38,32 @@ body {
   padding: 0 2rem;
 }
 
+.skip-link {
+position: absolute;
+top: -40px;
+left: 6px;
+background: #000;
+color: #fff;
+padding: 8px;
+text-decoration: none;
+z-index: 100;
+}
+.skip-link:focus {
+top: 6px;
+}
+
+.theme-toggle {
+position: fixed;
+top: 20px;
+right: 20px;
+background: var(--main-color);
+border: none;
+padding: 10px;
+border-radius: 50%;
+cursor: pointer;
+z-index: 10;
+}
+
 /* === NAVIGATION === */
 .nav {
   position: fixed;

@@ -26,6 +26,7 @@
     initTypewriter();
     initRevealAnimations();
     initStatsCounter();
+    initThemeToggle();
   };
 
   // Update copyright year
@@ -262,6 +263,17 @@
     setTimeout(() => {
       elements.toast.classList.remove('show');
     }, 3000);
+  };
+
+  // Theme toggle
+  const initThemeToggle = () => {
+    const themeToggle = document.getElementById('themeToggle');
+    if (!themeToggle) return;
+    
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.setAttribute('data-theme', 
+        document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
   };
 
   // Run initialization
