@@ -3,58 +3,68 @@
 // ============================================================
 
 // ===== DOM ELEMENTS =====
-const navbar = document.getElementById('navbar');
-const navLinks = document.getElementById('navLinks');
+const navbar = document.querySelector('.navbar') || document.getElementById('navbar');
+const navLinks = document.querySelector('.nav-links') || document.getElementById('navLinks');
 const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 
 // ===== NAVBAR SCROLL EFFECT =====
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
+  if (navbar) {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
   }
 });
 
 // ===== SMOOTH SCROLL FOR NAV LINKS =====
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      const offset = 70; // Navbar height
-      const targetPosition = target.offsetTop - offset;
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
-      updateActiveNav(this.getAttribute('href'));
-    }
-  });
-});
-
-// ===== UPDATE ACTIVE NAV LINK =====
-function updateActiveNav(currentId) {
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === currentId) {
-      link.classList.add('active');
-    }
+const anchors = document.querySelectorAll('a[href^="#"]');
+if (anchors.length > 0) {
+  anchors.forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        const offset = 70; // Navbar height
+        const targetPosition = target.offsetTop - offset;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+        updateActiveNav(this.getAttribute('href'));
+      }
+    });
   });
 }
 
+// ===== UPDATE ACTIVE NAV LINK =====
+function updateActiveNav(currentId) {
+  const navAnchors = document.querySelectorAll('.nav-links a, a[href^="#"]');
+  if (navAnchors.length > 0) {
+    navAnchors.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === currentId) {
+        link.classList.add('active');
+      }
+    });
+  }
+}
+
 // ===== THEME TOGGLE =====
-themeToggle.addEventListener('click', () => {
-  const currentTheme = html.getAttribute('data-theme');
-  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-  
-  html.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-  
-  // Update toggle button
-  themeToggle.textContent = newTheme === 'light' ? '🌙' : '☀️';
-});
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    
+    // Update toggle button
+    themeToggle.textContent = newTheme === 'light' ? '🌙' : '☀️';
+  });
+}
 
 // ===== LOAD SAVED THEME =====
 function loadTheme() {
