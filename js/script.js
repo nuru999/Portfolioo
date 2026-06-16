@@ -2,6 +2,39 @@ const navbar = document.getElementById('navbar');
 const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 
+// ── Hamburger menu ──
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+const navOverlay = document.getElementById('navOverlay');
+
+function openMenu() {
+  navLinks.classList.add('open');
+  hamburger.classList.add('open');
+  navOverlay.classList.add('active');
+  hamburger.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMenu() {
+  navLinks.classList.remove('open');
+  hamburger.classList.remove('open');
+  navOverlay.classList.remove('active');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.contains('open') ? closeMenu() : openMenu();
+  });
+}
+if (navOverlay) navOverlay.addEventListener('click', closeMenu);
+
+// Close menu when a nav link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
 function updateActiveNav(currentId) {
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.classList.toggle('active', link.getAttribute('href') === currentId);
