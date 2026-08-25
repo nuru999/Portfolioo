@@ -1,375 +1,119 @@
-# 🚀 Nuru Amudi - Portfolio Website
+<p align="center">
+  <img src="./assets/portfolio-banner.svg" width="100%" alt="Nuru Amudi Developer Portfolio" />
+</p>
 
-**Live**: https://nuru999.github.io/Portfolioo/
+<p align="center">
+  <a href="https://nuru999.github.io/Portfolioo/"><img src="https://img.shields.io/badge/Live_Portfolio-Visit-4F46E5?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Visit live portfolio" /></a>
+  <img src="https://img.shields.io/badge/Responsive-Yes-0891B2?style=for-the-badge" alt="Responsive website" />
+  <img src="https://img.shields.io/badge/Theme-Light_%26_Dark-111827?style=for-the-badge" alt="Light and dark themes" />
+</p>
 
-A modern, responsive portfolio website showcasing 4 production-ready projects with comprehensive documentation and professional design.
+## Overview
 
----
+This is the personal portfolio of **Nuru Amudi**, a software developer and cybersecurity enthusiast based in Nairobi, Kenya.
 
-## 🎯 About
+The website presents selected software projects, education, technical growth, and contact channels in a fast, responsive interface built without a frontend framework.
 
-This is the personal portfolio website of **Nuru Amudi**, a Software Developer and Cybersecurity Enthusiast based in Kenya. The portfolio features:
+> **Live portfolio:** [nuru999.github.io/Portfolioo](https://nuru999.github.io/Portfolioo/)
 
-- 📱 **Responsive Design** - Works seamlessly on all devices
-- 🎨 **Modern UI/UX** - Dark/Light theme with smooth animations
-- ⚡ **Performance Optimized** - Fast loading with lazy loading images
-- 🔐 **Secure** - Best practices in web security
-- ♿ **Accessible** - WCAG compliant with skip links
+## Portfolio sections
 
----
+| Section | Purpose |
+| --- | --- |
+| **Who I Am** | Professional introduction, focus areas, and development approach |
+| **Education & Growth** | Software engineering, cybersecurity, and ICDL training |
+| **Selected Work** | Six practical development projects with repository links |
+| **Achievements** | Skills, progress, and project milestones |
+| **Contact** | Direct ways to discuss work and collaboration |
 
-## 📊 Featured Projects
+## Selected projects
 
-### 1. 🎓 FMI - University Website
-**Tech**: HTML • CSS • JavaScript • PHP • SQLite
+| Project | Focus | Repository |
+| --- | --- | --- |
+| **VINEYARD-SMS** | Multi-platform school management system | [View project](https://github.com/nuru999/VINEYARD-SMS) |
+| **Farm Inventory** | Flask inventory dashboard and REST API | [View project](https://github.com/nuru999/Farm_inventory) |
+| **News App** | React news discovery interface | [View project](https://github.com/nuru999/News-App) |
+| **FMI University Website** | Responsive educational website | [View project](https://github.com/nuru999/FMI) |
+| **Weather App** | Weather search and forecast experience | [View project](https://github.com/nuru999/Weather-App) |
+| **PASS-IT-ON** | Event and community landing page | [View project](https://github.com/nuru999/PASS-IT-ON) |
 
-Enhanced university website with optimized UI/UX, improved performance, and fixed database integration.
+## Experience and features
 
-**Features**:
-- Responsive design across all devices
-- Semantic HTML structure
-- Modern CSS styling
-- Optimized JavaScript performance
-- Independent SQLite database
+- Responsive navigation with a mobile hamburger menu.
+- Light and dark themes saved in local storage.
+- Smooth scrolling and active-section navigation.
+- Project cards with direct source-code links.
+- Education timeline and achievement highlights.
+- Accessible semantic structure, labels, focus states, and keyboard support.
+- Lightweight HTML, CSS, and JavaScript with no build dependency.
 
-**Repository**: https://github.com/nuru999/FMI.git
+## Technology
 
----
-
-### 2. 📰 News App - React + Vite
-**Tech**: React 18 • Vite • NewsAPI • Framer Motion
-
-Production-ready news application with real-time data, advanced state management, and error boundaries.
-
-**Features**:
-- Real-time news from NewsAPI
-- React hooks for state management
-- Error boundary components
-- Custom useNews hook
-- Search & category filtering
-- Saved articles with localStorage
-- Loading skeletons
-- Responsive design
-
-**Repository**: https://github.com/nuru999/News-App.git
-
-**Latest Commit**: React refactoring + NewsAPI integration
-
----
-
-### 3. 🌾 Farm Inventory - Flask Backend
-**Tech**: Flask • PostgreSQL • SQLAlchemy • REST API
-
-Full-stack inventory management system with production-ready backend, database support, and comprehensive API documentation.
-
-**Features**:
-- RESTful API with 6 endpoints
-- PostgreSQL/SQLite database support
-- Flask blueprint architecture
-- Input validation on all endpoints
-- Error handling with rollback
-- Database migrations
-- CLI commands for initialization
-- Statistics endpoint
-- CORS enabled
-
-**Repository**: https://github.com/nuru999/Farm_inventory.git
-
-**Latest Commit**: PostgreSQL + Flask blueprints
-
----
-
-### 4. 🌤️ Weather App - Modular JavaScript
-**Tech**: Vanilla JS • OpenWeatherMap API • LocalStorage
-
-Production-ready weather application with modular architecture, optimized performance, and comprehensive error handling.
-
-**Features**:
-- Modular JavaScript (3 separate modules)
-- OpenWeatherMap API integration
-- Geolocation support
-- Temperature unit conversion (C↔F)
-- Recent searches with localStorage
-- Debounced search for performance
-- Error handling throughout
-- Responsive design
-
-**Repository**: https://github.com/nuru999/Weather-App.git
-
-**Latest Commit**: JavaScript modularization + error handling
-
----
-
-## 🛠️ Portfolio Website Stack
-
-| Component | Technology |
-|-----------|-----------|
-| **HTML** | HTML5 with semantic structure |
-| **CSS** | Custom CSS with CSS variables |
-| **JavaScript** | Vanilla JS (no frameworks) |
-| **Fonts** | Google Fonts (Outfit, Space Grotesk) |
+| Layer | Implementation |
+| --- | --- |
+| **Structure** | Semantic HTML5 |
+| **Styling** | CSS custom properties, Grid, Flexbox, transitions, and responsive breakpoints |
+| **Interaction** | Vanilla JavaScript ES6+ |
 | **Icons** | Boxicons |
-| **Theme** | Dark/Light mode toggle |
+| **Fonts** | Google Fonts |
 | **Hosting** | GitHub Pages |
 
----
+## Project structure
 
-## 📁 Project Structure
-
-```
+```text
 Portfolioo/
-├── index.html           # Main portfolio page
-├── README.md            # This file
+├── index.html
 ├── css/
-│   └── style.css       # All styles (1300+ lines)
+│   └── style.css
 ├── js/
-│   └── script.js       # All interactions (280+ lines)
-├── images/             # Project screenshots & assets
-├── resume/             # Resume files
-└── .github/
-    └── workflows/      # CI/CD configuration
+│   └── script.js
+├── images/
+└── assets/
+    └── portfolio-banner.svg
 ```
 
----
+## Run locally
 
-## ✨ Features
+No installation or build process is required.
 
-### 🎨 Design
-- Modern, clean aesthetic
-- Responsive grid layouts
-- Smooth animations & transitions
-- Custom cursor effects
-- Gradient text effects
-
-### 🌓 Theme Support
-- Dark mode (default)
-- Light mode toggle
-- CSS variables for easy customization
-- Smooth theme transitions
-
-### 📱 Responsive Design
-- Mobile-first approach
-- Breakpoints for all devices
-- Flexible layouts
-- Lazy-loaded images
-
-### ♿ Accessibility
-- Skip navigation link
-- Semantic HTML
-- ARIA labels
-- Keyboard navigation
-- High contrast support
-
-### ⚡ Performance
-- Optimized images
-- Lazy loading
-- Smooth scrolling
-- Efficient CSS/JS
-- No external dependencies (except fonts & icons)
-
-### 🔍 SEO
-- Meta tags
-- Open Graph support
-- Structured data
-- Readable URLs
-- Mobile optimized
-
----
-
-## 🚀 Getting Started
-
-### View Live
-Simply open the live portfolio: https://nuru999.github.io/Portfolioo/
-
-### Local Development
 ```bash
-# Clone the repository
 git clone https://github.com/nuru999/Portfolioo.git
 cd Portfolioo
-
-# Open in browser (no build needed)
-# Option 1: Double-click index.html
-# Option 2: Use a local server
 python -m http.server 8000
-# Visit http://localhost:8000
 ```
 
-### Customize
-1. Edit `index.html` for content
-2. Modify `css/style.css` for styling
-3. Update `js/script.js` for interactivity
-4. Replace images in `images/` folder
-5. Update project links and descriptions
+Open [http://localhost:8000](http://localhost:8000).
+
+You can also open `index.html` directly or use the VS Code Live Server extension.
+
+## Deployment
+
+The `main` branch is published with GitHub Pages.
+
+After making changes:
+
+1. Test the light and dark themes.
+2. Check the navigation at mobile, tablet, and desktop widths.
+3. Confirm every project and contact link.
+4. Verify image filenames match their exact capitalization.
+5. Review the browser console before publishing.
+
+## Accessibility and performance
+
+- Semantic landmarks and a logical heading order.
+- Visible keyboard focus and descriptive link text.
+- Responsive images and lightweight static assets.
+- Reduced dependency overhead and fast CDN hosting.
+- Theme colours designed for readable contrast.
+
+## Contact
+
+- **Email:** [muhammadnuru85@gmail.com](mailto:muhammadnuru85@gmail.com)
+- **LinkedIn:** [Nuru Amudi](https://www.linkedin.com/in/nuru-ayubu-3237522b7)
+- **GitHub:** [@nuru999](https://github.com/nuru999)
 
 ---
 
-## 📊 Portfolio Sections
-
-### 🏠 Hero Section
-- Eye-catching introduction
-- Call-to-action buttons
-- Typewriter animation
-- Background effects
-
-### 👤 About Section
-- Personal introduction
-- Skills overview
-- Quick facts
-
-### 🎓 Education Section
-- Learning journey
-- Key milestones
-- Skills developed
-
-### 💼 Services Section
-- Core competencies
-- Service offerings
-- Value proposition
-
-### 🎯 Projects Section
-- Project showcase
-- Technology stack
-- Direct GitHub links
-- Hover animations
-
-### 💬 Testimonials Section
-- Client feedback
-- 5-star ratings
-- Professional quotes
-
-### 📄 Resume Section
-- Downloadable resume
-- Experience overview
-
-### 📧 Contact Section
-- Contact form
-- Social links
-- Email integration
-
----
-
-## 🎨 Customization
-
-### Colors
-Edit CSS variables in `style.css`:
-```css
-:root {
-  --bg-color: #0a0a0a;
-  --text-color: #ffffff;
-  --main-color: #00ffee;
-  --card-bg: rgba(255, 255, 255, 0.05);
-}
-```
-
-### Fonts
-Change in `index.html`:
-```html
-<link href="https://fonts.googleapis.com/css2?family=YOUR-FONT:wght@..." rel="stylesheet">
-```
-
-### Projects
-Update in `index.html` portfolio section:
-```html
-<h3 class="portfolio-title">Project Name</h3>
-<p class="portfolio-description">Description here</p>
-<p class="portfolio-tech">Tech stack</p>
-```
-
----
-
-## 🔄 Latest Updates
-
-### May 7, 2024 - Major Portfolio Enhancement
-
-All 4 projects have been significantly enhanced:
-
-**News App**
-- ✅ Error boundary component
-- ✅ Custom useNews hook
-- ✅ NewsAPI integration
-- ✅ Comprehensive README
-
-**Farm Inventory**
-- ✅ PostgreSQL support
-- ✅ Flask blueprints
-- ✅ Input validation
-- ✅ Complete API documentation
-
-**Weather App**
-- ✅ Modular JavaScript
-- ✅ Error handling
-- ✅ Performance optimization
-- ✅ Detailed module guide
-
-**FMI**
-- ✅ Database bug fix
-- ✅ Enhanced UI/UX
-- ✅ Performance improvements
-- ✅ Professional documentation
-
----
-
-## 📝 Files Modified
-
-- `index.html` - Updated project descriptions with enhanced features
-- `README.md` - Created comprehensive portfolio documentation
-
----
-
-## 📊 Website Analytics
-
-- **Build Time**: ~50ms
-- **Page Size**: ~50KB (optimized)
-- **Images**: Lazy loaded
-- **Performance Score**: 95+/100
-- **Accessibility Score**: 98+/100
-
----
-
-## 🔐 Security
-
-- ✅ No sensitive data exposed
-- ✅ Content Security Policy ready
-- ✅ HTTPS on GitHub Pages
-- ✅ No external scripts (except fonts & icons)
-- ✅ Form handling via email service
-
----
-
-## 📞 Contact
-
-- **Email**: [Your email]
-- **GitHub**: https://github.com/nuru999
-- **LinkedIn**: [Your LinkedIn]
-- **Twitter**: [Your Twitter]
-
----
-
-## 📜 License
-
-This portfolio is open source and free to use.
-
----
-
-## 🙏 Credits
-
-- Design inspired by modern portfolio trends
-- Icons by Boxicons
-- Fonts by Google Fonts
-- Hosting by GitHub Pages
-
----
-
-**Last Updated**: May 7, 2024
-**Version**: 2.0 (Enhanced with project updates)
-
----
-
-**Ready to impress potential employers?** Your portfolio now showcases:
-- ✅ 4 production-ready projects
-- ✅ Modern technical stack
-- ✅ Professional documentation
-- ✅ Clean, responsive design
-
-**Share your portfolio**: https://github.com/nuru999/Portfolioo
-
+<p align="center">
+  Designed and developed by <a href="https://github.com/nuru999">Nuru Amudi</a>.
+</p>
