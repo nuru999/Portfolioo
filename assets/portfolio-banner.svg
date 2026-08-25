@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Nuru Amudi Developer Portfolio</title>
+  <desc id="desc">Portfolio website banner for software development and cybersecurity</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset=".52" stop-color="#312E81"/>
+      <stop offset="1" stop-color="#0E7490"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#FFFFFF" opacity=".055"/>
+    </pattern>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#020617" flood-opacity=".45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#dots)"/>
+  <circle cx="1090" cy="40" r="210" fill="#22D3EE" opacity=".055"/>
+  <circle cx="1040" cy="360" r="230" fill="#818CF8" opacity=".05"/>
+
+  <g transform="translate(80 77)">
+    <rect width="130" height="130" rx="34" fill="#FFFFFF" opacity=".09"/>
+    <path d="m42 45-22 20 22 20M88 45l22 20-22 20" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m75 32-21 66" stroke="#C4B5FD" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <text x="246" y="105" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="5" fill="#67E8F9">NURU AMUDI</text>
+  <text x="246" y="166" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" fill="#FFFFFF">Developer Portfolio</text>
+  <text x="246" y="211" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" fill="#DDE4F2">Full-stack projects, responsive experiences and secure systems.</text>
+
+  <g transform="translate(246 255)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="650" fill="#EEF2FF">
+    <rect width="118" height="40" rx="20" fill="#FFFFFF" opacity=".09"/>
+    <circle cx="23" cy="20" r="5" fill="#818CF8"/>
+    <text x="39" y="26">JavaScript</text>
+    <g transform="translate(130)">
+      <rect width="102" height="40" rx="20" fill="#FFFFFF" opacity=".09"/>
+      <circle cx="23" cy="20" r="5" fill="#A5B4FC"/>
+      <text x="39" y="26">React</text>
+    </g>
+    <g transform="translate(244)">
+      <rect width="144" height="40" rx="20" fill="#FFFFFF" opacity=".09"/>
+      <circle cx="23" cy="20" r="5" fill="#22D3EE"/>
+      <text x="39" y="26">Cybersecurity</text>
+    </g>
+  </g>
+
+  <g transform="translate(912 86)" filter="url(#shadow)">
+    <rect width="220" height="198" rx="24" fill="#111827" stroke="#67E8F9" stroke-opacity=".3"/>
+    <circle cx="30" cy="26" r="5" fill="#F87171"/>
+    <circle cx="48" cy="26" r="5" fill="#FBBF24"/>
+    <circle cx="66" cy="26" r="5" fill="#34D399"/>
+    <path d="m36 86 27-23 28 23-28 23Z" fill="none" stroke="#818CF8" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="113" y="65" width="70" height="11" rx="5.5" fill="#475569"/>
+    <rect x="113" y="87" width="48" height="11" rx="5.5" fill="#475569"/>
+    <rect x="35" y="135" width="148" height="11" rx="5.5" fill="#334155"/>
+    <rect x="35" y="158" width="102" height="11" rx="5.5" fill="#334155"/>
+  </g>
+</svg>
